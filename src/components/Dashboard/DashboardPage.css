@@ -1,0 +1,106 @@
+
+.sidebar {
+    width: 200px;
+    background-color: #2f3d4f;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .sidebar .dropdown-btn {
+    background-color: #3b4c5d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar .dropdown-btn:hover {
+    background-color: #1c2a37;
+  }
+  
+  /* Dashboard Content */
+  .dashboard-container {
+    display: flex;
+  }
+  
+  .dashboard-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+  }
+  
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .chart {
+    width: 30%; /* Ensures 3 charts per row */
+    margin-bottom: 20px;
+  }
+  
+  .chart h3 {
+    text-align: center;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .pagination span {
+    padding: 5px 10px;
+  }
+  
+  /* Table Styling */
+  .user-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  .menu{
+    margin: 0;
+    font-size: large;
+  }
